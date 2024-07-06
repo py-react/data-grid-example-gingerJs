@@ -2,6 +2,7 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Link from "src/libs/Link"
 
+
 function Layout() {
   return (
     <div className='p-0' style={{ minHeight: "100vh", width: '100vw' }}>

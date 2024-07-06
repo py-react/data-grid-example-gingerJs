@@ -1,3 +1,11 @@
+
+
+def meta_data():
+    return {
+        "title": "Material UI Data grid Example",
+        "description": "Some Description",
+    }
+
 def index(request):
     # Define initial rows as a list of dictionaries
     rows = [

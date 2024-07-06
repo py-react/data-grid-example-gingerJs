@@ -11,8 +11,7 @@ CORS(app,resources={r"/api/*": {"origins": "*"}})
 def before_request():
     # When you import jinja2 macros, they get cached which is annoying for local
     # development, so wipe the cache every request.
-    if os.environ.get('DEBUG') == "True" or False:
-        app.jinja_env.cache = {}
+    app.jinja_env.cache = {}
 
 # Generate Flask routes
 add_url_rules(os.path.join(os.getcwd(),"src","app"),app,debug=True if os.environ.get('DEBUG')=="True" else False)

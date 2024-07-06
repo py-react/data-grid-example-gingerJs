@@ -2,7 +2,7 @@ import React from 'react'
 
 function Loading() {
   return (
-    <div>Loading from root</div>
+    <div>Loading from mui-data-grid</div>
   )
 }
 

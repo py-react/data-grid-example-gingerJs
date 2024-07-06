@@ -1,0 +1,8 @@
+NAME = "GingerJs"
+VERSION = "1.0"
+PACKAGE_MANAGER = "yarn"
+DEBUG = False
+PORT = "5001"
+HOST = "0.0.0.0"
+PYTHONDONTWRITEBYTECODE = ""
+

@@ -7,7 +7,7 @@ def index(request):
     ]
 
     # Generate additional 47 items to make the total count 50
-    for i in range(4, 51):
+    for i in range(4, 1001):
         rows.append({ 'id': i, 'col1': f'Item {i}', 'col2': f'Description {i}' })
 
     # Define columns as a list of dictionaries
