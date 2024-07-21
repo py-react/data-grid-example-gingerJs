@@ -1,5 +1,5 @@
 
-def meta_data():
+async def meta_data():
     return {
         "title": "Ginger-Js",
         "description": "Some Description",
@@ -8,5 +8,5 @@ def meta_data():
         "icon":"/static/images/favicon.ico"
     }
 
-def index(request):
+async def index(request):
     return {}

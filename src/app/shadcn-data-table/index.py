@@ -1,4 +1,4 @@
-def index(request):
+async def index(request):
     # Define initial rows as a list of dictionaries
     rows = [
         { 'id': 1, 'col1': 'Hello', 'col2': 'World' },

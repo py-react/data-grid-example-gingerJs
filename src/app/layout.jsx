@@ -1,6 +1,18 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Link from "src/libs/Link"
+import { ServerStyleSheet } from "styled-components"
+
+
+export const getAppContext = (ctx)=>{
+  const sheet = new ServerStyleSheet()
+  ctx.renderApp=()=>({
+    getStyles:(App)=> sheet.collectStyles(App),
+    styles:()=>sheet.getStyleTags(),
+    finally: sheet.seal
+  })
+  return ctx
+}
 
 
 function Layout() {
